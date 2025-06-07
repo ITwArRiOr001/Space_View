@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Solar System with Enhanced Elliptical Orbits</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+  <div id="loadingScreen">
+    <canvas id="loadingCanvas"></canvas>
+    <div class="loading-text">ORBITAL SYSTEMS..</div>
+  </div>
+  <button class="nav-toggle"></button>
+  <div class="nav-menu">
+    <button class="nav-option" id="nav1">Sun View</button>
+    <button class="nav-option" id="nav2">Moon View</button>
+    <button class="nav-option" id="nav3">Earth View</button>
+    <button class="nav-option" id="nav4">Mars View</button>
+    <button class="nav-option" id="nav5">Jupiter View</button>
+    <button class="nav-option" id="nav6">Mercury View</button>
+    <button class="nav-option" id="nav7">Venus View</button>
+    <button class="nav-option" id="nav8">Saturn View</button>
+    <button class="nav-option" id="nav9">Galaxy View</button>
+    <button class="nav-option" id="nav10">Toggle Orbits/Labels</button>
+  </div>
+  <!-- Info Panel -->
+  <div id="info-panel">
+  <h2 id="info-name"></h2>
+  <p id="info-description"></p>
+  <ul id="info-facts"></ul>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
